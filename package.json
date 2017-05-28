@@ -1,0 +1,12 @@
+{
+  "name": "simple-websocket-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "author": "Ferdinand Malcher",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "^2.0.1",
+    "websocket": "^1.0.24"
+  }
+}
