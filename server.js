@@ -1,7 +1,11 @@
 (function(){
     const WebSocketServer = require('websocket').server;
     const server = require('http').createServer();
-    server.listen(3333);
+    
+    let port = 3333;
+    server.listen(port, () => {
+        console.log('WebSocket server running on port', port);
+    });
 
     const wsServer = new WebSocketServer({
         httpServer: server
@@ -23,7 +27,11 @@
 
 (function(){
     const server = require('http').createServer();
-    server.listen(4444);
+    
+    let port = 4444;
+    server.listen(port, () => {
+        console.log('socket.io server running on port', port);
+    });
 
     const io = require('socket.io')(server);
 
